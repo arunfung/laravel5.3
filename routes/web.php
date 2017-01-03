@@ -17,7 +17,7 @@ Route::group(['domain' => 'laravel53.aruncn.com'], function () {
         return view('welcome');
     });
     Auth::routes();
-    Route::get('/home', 'HomeController@index');
+    Route::get('/home', 'Home\HomeController@index');
 });
 Route::group(['domain' => 'admin.aruncn.com'], function () {
 
