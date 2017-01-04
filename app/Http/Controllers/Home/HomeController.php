@@ -33,7 +33,7 @@ class HomeController extends Controller
     public function index()
     {
         $user = User::find(1);
-        //$this->emailService->SendWelcome($user);
+        $this->emailService->SendWelcome($user);
         return view('home');
 
     }

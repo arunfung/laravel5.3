@@ -90,7 +90,7 @@
                                 </ul>
                             </li>
                         @else
-                                <li><a href="{{ url('/login') }}">Login</a></li>
+                                <li><a href="{{ url($local.'/login') }}">Login</a></li>
                                 <li><a href="{{ url('/register') }}">Register</a></li>
                         @endif
                     </ul>
