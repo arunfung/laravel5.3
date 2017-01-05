@@ -12,12 +12,12 @@
 */
 
 
-Route::group(['domain' => 'laravel53.aruncn.com','prefix'=>'{locale}'], function ($locale) {
-    App::setLocale($locale);
-    Route::get('/', function () {
+Route::group(['domain' => 'laravel53.aruncn.com'], function () {
+//    App::setLocale($locale);
+//    Route::get('/{locale}', function ($locale) {
 //        App::setLocale($locale);
-        return view('welcome');
-    });
+//        return view('welcome');
+//    });
     Auth::routes();
     Route::get('/home', 'Home\HomeController@index');
 });
